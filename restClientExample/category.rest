@@ -1,0 +1,42 @@
+GET {{baseUrl}}/category HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/category/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+POST {{baseUrl}}/category HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "CategoryName":"can"
+}
+
+###
+
+DELETE {{baseUrl}}/category HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id" : 2
+}
+
+###
+
+PUT {{baseUrl}}/category HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id" : 1,
+    "CategoryName":"cax"
+}
+
+###

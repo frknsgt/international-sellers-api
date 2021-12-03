@@ -1,0 +1,47 @@
+GET {{baseUrl}}/order HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/order/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+
+POST {{baseUrl}}/order HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "CompanyID":2,
+    "ProductID":2,
+    "ProductCOunt":1
+}
+
+###
+
+PUT {{baseUrl}}/order HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "orderName": "Kadir",
+    "PhoneNumber": "059598771222",
+    "Description": "dasdasdasdasdasd",
+    "EmailAddress": "can@project.com",
+    "Password": "password"
+}
+
+###
+
+DELETE  {{baseUrl}}/order HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}

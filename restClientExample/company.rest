@@ -1,0 +1,49 @@
+GET {{baseUrl}}/company HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/company/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+
+POST {{baseUrl}}/company HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "CompanyName": "Kadir",
+    "PhoneNumber": "+0595987712",
+    "Description": "dasdasdasdasdasd",
+    "EmailAddress": "can@project.com",
+    "Password": "password"
+}
+
+###
+
+PUT {{baseUrl}}/company HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "CompanyName": "Kadir",
+    "PhoneNumber": "059598771222",
+    "Description": "dasdasdasdasdasd",
+    "EmailAddress": "can@project.com",
+    "Password": "password"
+}
+
+###
+
+DELETE  {{baseUrl}}/company HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}

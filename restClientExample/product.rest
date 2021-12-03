@@ -1,0 +1,51 @@
+GET {{baseUrl}}/product HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+GET {{baseUrl}}/product/1 HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+###
+
+
+POST {{baseUrl}}/product HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "CategoryID": 1,
+    "ProductName": "Kadir",
+    "Price": 1,
+    "StockAmount": 4,   
+    "Description": "canasdasdasdsadassssssssst.com",
+    "ImagePath":"sss"
+
+}
+
+###
+PUT {{baseUrl}}/product HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1,
+    "ProductName": "Kadirx",
+    "Price": 1,
+    "StockAmount": 4,   
+    "CategoryID": 1,
+    "Description": "canasdasdasdsadassssssssst.com",
+    "ImagePath":"sss"
+}
+
+###
+
+DELETE  {{baseUrl}}/product HTTP/1.1
+Content-Type: application/json
+token: {{token}}
+
+{
+    "Id": 1
+}
